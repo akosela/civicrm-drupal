@@ -271,6 +271,7 @@ mysql -u root -D civicrm <<EOF
 grant select on civicrm.* to drupal@localhost identified by '$drupal';
 EOF
 
+chown -R $admin:$admin /usr/share/nginx/html/drupal/site/all
 rm -f /root/.my.cnf
 rm /usr/local/bin/drush
 ln -s /home/admin/.config/composer/vendor/bin/drush /usr/local/bin/drush
