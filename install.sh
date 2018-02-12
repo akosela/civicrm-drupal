@@ -258,9 +258,13 @@ mkdir files
 chown apache:apache files
 drush -y vset file_private_path /usr/share/nginx/html/drupal/files
 
-# CiviCRM extensions directory and integrate views
-echo "CiviCRM extensions directory and integrate views..."
+# Install Backup and Migrate module for Drupal
+echo "Install backup_migrate module for Drupal..."
 chown -R apache:apache /usr/share/nginx/html/drupal/sites/default/files
+drush -y en backup_migrate
+
+# CiviCRM views integration
+echo "CiviCRM views integration..."
 drush -y en views
 
 mysql -u root -D civicrm <<EOF
