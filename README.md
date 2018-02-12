@@ -1,9 +1,9 @@
 ## CiviCRM-Drupal
 
 This is an sh(1) script to fully automate install of CiviCRM-Drupal.  It
-assumes you are using some kind of Red Hat Linux (RHEL/OL/CentOS).  The
-following software is installed and configured: Nginx, MariaDB, Certbot,
-Drush, Drupal, CiviCRM.
+assumes you are using some flavor of Red Hat Linux (RHEL/OL/CentOS).
+The following software is installed and configured: Nginx, MariaDB,
+Certbot, Drush, Drupal, CiviCRM.
 
 ## Install
 
@@ -16,7 +16,8 @@ to match your environment.  Then run the script.
 
 ## Uninstall
 
-This is a script to remove everything what was installed with install.sh
+This is a script to remove everything what was installed with
+install.sh.
 
 ```
 # ./clearinstall.sh
